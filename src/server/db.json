@@ -2,35 +2,35 @@
     "events": [
         {
             "id": 1,
-            "event": "Front-end developer meetup",
+            "name": "Front-end developer meetup",
             "date": "2020-10-03",
             "time": "14:00",
             "info": "A meetup for passionate developers"
         },
         {
             "id": 2,
-            "event": "Hackers night",
+            "name": "Hackers night",
             "date": "2020-10-03",
             "time": "01:00",
             "info": "Welcome to our late night hackathon"
         },
         {
             "id": 3,
-            "event": "Developers afterwork",
+            "name": "Developers afterwork",
             "date": "2020-10-03",
             "time": "19:00",
             "info": "Joins us for our afterwork"
         },
         {
             "id": 4,
-            "event": "Online tech news",
+            "name": "Online tech news",
             "date": "2020-10-03",
             "time": "14:00",
             "info": "Join us online for the latest tech news"
         },
         {
             "id": 5,
-            "event": "Coffee n code",
+            "name": "Coffee n code",
             "date": "2020-10-03",
             "time": "14:00",
             "info": "Developer meetup where we talk about our ideas"
