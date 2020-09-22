@@ -13,7 +13,7 @@ it('home-page should exist', () => {
     expect(home.exists()).toBe(true);
 })
 
-it('should render list on HomePage from database', async () => {
+/*it('should render list on HomePage from database', async () => {
     const wrapper = mount('#list')
     expect(wrapper.text()).toBe(true)
 
@@ -21,6 +21,6 @@ it('should render list on HomePage from database', async () => {
         events: data.events
     })
     expect(wrapper.text()).toBe(true)
-})
+})*/
 
 })

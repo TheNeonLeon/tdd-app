@@ -1,8 +1,8 @@
 <template>
   <div>
-      <header>
-          <h1>The meetup hub</h1>
-      </header>
+    <header>
+      <h1>The Meetup Hub</h1>
+    </header>
       <ul>
           <li id="list" v-for="event in events" :key="event.id">
             {{event.name}}
