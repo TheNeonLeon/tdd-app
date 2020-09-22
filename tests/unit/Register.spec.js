@@ -16,4 +16,10 @@ it('Register-page should exist', () => {
     expect(reg.exists()).toBe(true);
   })
 
+it('should show empty name-form', () => {
+    let content = wrapper.find('.name').text();
+
+    expect(content).toBe('');
+})
+
 })
