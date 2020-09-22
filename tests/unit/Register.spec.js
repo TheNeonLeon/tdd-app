@@ -11,5 +11,9 @@ describe('Register.vue', () => {
           expect(true).toBe(true)
         })
       })
+it('Register-page should exist', () => {
+    const reg = wrapper.findComponent(Register);
+    expect(reg.exists()).toBe(true);
+  })
 
 })
