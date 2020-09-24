@@ -12,7 +12,7 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/register',
+    path: '/register/:eventId',
     name: 'Register',
     component: Register
   }
