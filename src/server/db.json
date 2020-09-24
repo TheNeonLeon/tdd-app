@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Front-end developer meetup",
+            "location": "Gothenburg",
             "date": "2020-10-03",
             "time": "14:00",
             "info": "A meetup for passionate developers"
@@ -10,6 +11,7 @@
         {
             "id": 2,
             "name": "Hackers night",
+            "location": "Gothenburg",
             "date": "2020-10-03",
             "time": "01:00",
             "info": "Welcome to our late night hackathon"
@@ -17,6 +19,7 @@
         {
             "id": 3,
             "name": "Developers afterwork",
+            "location": "Gothenburg",
             "date": "2020-10-03",
             "time": "19:00",
             "info": "Joins us for our afterwork"
@@ -24,6 +27,7 @@
         {
             "id": 4,
             "name": "Online tech news",
+            "location": "Gothenburg",
             "date": "2020-10-03",
             "time": "14:00",
             "info": "Join us online for the latest tech news"
@@ -31,6 +35,7 @@
         {
             "id": 5,
             "name": "Coffee n code",
+            "location": "Gothenburg",
             "date": "2020-10-03",
             "time": "14:00",
             "info": "Developer meetup where we talk about our ideas"

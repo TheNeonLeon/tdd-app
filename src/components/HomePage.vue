@@ -7,10 +7,11 @@
       <ul>
           <li id="list" v-for="event in events" :key="event.id">
             <img class="meeting" @click="clickEvent(event.id)" v-bind:src="require(`@/assets/meeting.jpg`)">
-            {{event.name}}
-            <br> {{event.date}}
-            <br> {{event.time}}
-            <br> {{event.info}}
+            <b><u>{{event.name}}</u></b>
+            <br><b> Location:</b> {{event.location}}
+            <br><b>Date:</b> {{event.date}}
+            <br><b>Time:</b> {{event.time}}
+            <br><b> {{event.info}}</b>
           </li>
       </ul>
     </main>
@@ -48,7 +49,7 @@ li{
     width: 200px;
     height: 120px;
     cursor: pointer;
-    padding-bottom: 8rem;
+    padding-bottom: 9rem;
 }
 img{
     width: 101%;
