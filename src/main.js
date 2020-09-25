@@ -4,6 +4,7 @@ import router from './router'
 import VueFormulate from '@braid/vue-formulate'
 
 Vue.use(VueFormulate)
+Vue.component('VueFormulate', VueFormulate)
 Vue.config.productionTip = false
 
 new Vue({

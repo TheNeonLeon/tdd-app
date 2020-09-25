@@ -34,4 +34,9 @@ it('should show empty email-form when rendered', () => {
   expect(content).toBe('');
 })
 
+it('should show sign-up button on register page when rendered', () => {
+  let content = wrapper.find('.sign-up');
+
+  expect(content.exists(true)).toBe(true)
+})
 })

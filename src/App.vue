@@ -4,11 +4,17 @@
     </div>
     <router-view/>
     <header/>
+    <VueFormulate />
   </div>
 </template>
 
 <script>
+import VueFormulate from '@braid/vue-formulate'
+
 export default {
+  components: {
+    VueFormulate
+  }
 }
 </script>
 

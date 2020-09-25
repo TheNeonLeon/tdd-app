@@ -1,7 +1,7 @@
 <template>
   <div>
       <h1>Register form</h1>
-      <FormulateForm v-model="formValues">
+      <FormulateForm class="form" v-model="formValues">
         <FormulateInput
         class="name"
         name="name"
@@ -21,12 +21,24 @@
         label="Please enter your email adress"
         validation="required|email"
         />
+        <FormulateInput
+        class="sign-up"
+        type="submit"
+        label="Sign up"
+        />
       </FormulateForm>
+      <VueFormulate />
   </div>
 </template>
 
 <script>
+import VueFormulate from '@braid/vue-formulate'
+
 export default {
+  name: 'Register',
+  components: {
+    VueFormulate
+  },
   data: () => {
     return {
     }

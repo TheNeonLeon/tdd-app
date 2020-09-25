@@ -15,13 +15,18 @@
           </li>
       </ul>
     </main>
+    <VueFormulate />
   </div>
 </template>
 
 <script>
+import VueFormulate from '@braid/vue-formulate'
 import data from '../server/db.json'
 export default {
   name: 'HomePage',
+  components: {
+    VueFormulate
+  },
   data: () => {
     return {
       events: data.events
