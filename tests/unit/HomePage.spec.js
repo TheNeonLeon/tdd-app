@@ -11,13 +11,23 @@ const router = new VueRouter({
     routes
 })
 
-const wrapper = mount(component, HomePage, {
+    /*const wrapper = mount(HomePage, {
     localVue,
     mocks: { events: data.events },
     router
   })
   expect(wrapper.vm.events).toBe(true)
   expect(wrapper.vm.$route).toBeInstanceOf(Object)
+*/
+  it('route path should exist', () => {
+  const $route = { path: 'http://localhost:8080/#/' }
+  const wrapper = shallowMount(HomePage, {
+      mocks: {
+          $route
+      }
+  })
+  expect(wrapper.vm.$route.path).toBe($route.path)
+})
 
 //Globals
 describe('HomePage.vue', () => {
