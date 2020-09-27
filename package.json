@@ -10,13 +10,15 @@
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.4.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.12",
     "vue-router": "^3.4.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.6",
-    "@vue/cli-plugin-eslint": "^4.5.6",
     "@vue/cli-plugin-router": "^4.5.6",
     "@vue/cli-plugin-unit-jest": "^4.5.6",
     "@vue/cli-service": "^4.5.6",
@@ -43,7 +45,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+      "no-unused-vars": "off"
+    },
     "overrides": [
       {
         "files": [

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '@/components/HomePage.vue'
 import Register from '@/components/Register.vue'
+import Submit from '@/components/Submit.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/register/:eventId',
     name: 'Register',
     component: Register
+  },
+  { 
+    path: '/submit',
+    name: 'Submit',
+    component: Submit
   }
 ]
 

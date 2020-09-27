@@ -11,7 +11,9 @@
             <br><b> Location:</b> {{event.location}}
             <br><b>Date:</b> {{event.date}}
             <br><b>Time:</b> {{event.time}}
-            <br><b> {{event.info}}</b>
+            <br><b>{{event.info}}</b>
+            <br><font-awesome-icon @click="clickRating" :icon="['fas', 'star']"/>
+            <b>{{ratings}}</b>
           </li>
       </ul>
     </main>
@@ -29,18 +31,25 @@ export default {
   },
   data: () => {
     return {
-      events: data.events
+      events: data.events,
+      ratings: 0
     }
   },
   methods: {
     clickEvent (eventId) {
       this.$router.push({ path: `/register/${eventId}` })
+    },
+    clickRating () {
+      this.ratings++
     }
   }
 }
 </script>
 
 <style scoped>
+header{
+  text-align: center;
+}
 ul{
     display: flex;
     flex-wrap: wrap;
@@ -53,12 +62,12 @@ li{
     box-shadow: 5px 3px 3px rgb(116, 116, 116);
     width: 200px;
     height: 120px;
-    cursor: pointer;
-    padding-bottom: 9rem;
+    padding-bottom: 10rem;
 }
 img{
     width: 101%;
     height: 100%;
+    cursor: pointer;
 }
 
 </style>
