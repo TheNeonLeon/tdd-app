@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
-      <h1>Thank you for registering for this event.</h1>
-      <h3>You will receive an email shortly for more information about the upcoming event</h3>
+      <h1>Thank you for signing up for this event!</h1>
+      <h3>You will receive an email shortly which contains more information about the upcoming event</h3>
   </div>
 </template>
 

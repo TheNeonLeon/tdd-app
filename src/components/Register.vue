@@ -2,6 +2,7 @@
   <div>
     <main>
       <h1>Register form</h1>
+      <h4>Please enter your information below</h4>
       <form>
     	  <label for="firstName">First Name</label>
 
@@ -26,7 +27,7 @@
         v-model="form.email" />
     	    <br>
 
-    	  <label for="event">Choose an event</label>
+    	  <label for="event">Choose an event:</label>
     	  <select id="event" @change="updateForm('event', $event.target.value)">
           <option value="Choose">Events:</option>
           <option value="Front-end developer meetup">>Front-end developer meetup</option>
@@ -85,5 +86,24 @@ main{
 }
 li{
   list-style: none;
+}
+input{
+  margin: 0.2rem;
+}
+#email{
+  margin-left: 2.6rem;
+}
+#event{
+  margin-right: 1.05rem;
+}
+#submit{
+  margin-top: 1rem;
+  border-radius: 12%;
+  background-color: white;
+  border-color: black;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
 }
 </style>>
