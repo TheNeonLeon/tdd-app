@@ -8,6 +8,7 @@ localVue.use(VueRouter)
 
 const routes = [{ path: '/register:eventId', component: Register }]
 
+
 it('route path register should exist', () => {
   const $route = { path: 'http://localhost:8080/#/register:eventId' }
   const wrapper = shallowMount(Register, {
