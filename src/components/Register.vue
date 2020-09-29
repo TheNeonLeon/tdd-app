@@ -38,6 +38,18 @@
     	  </select>
     	    <br>
     	  <button id="submit" @click="clickEvent()" type="submit">Submit</button>
+        <br>
+          <label for="review">Participated in one of our events in the past? Leave a review and tell us what you though</label>
+          <br>
+          <textarea
+            id="review"
+            rows="3"
+             @input="updateForm('review', $event.target.value)"
+            :value="form.review"
+          >
+          </textarea>
+          <br>
+          <button id="submit-review" @click="clickReview()" type="submit">Leave review</button>
     	</form>
     </main>
   </div>
@@ -53,6 +65,7 @@ export default {
             lastName: '',
             email: '',
             event: '',
+            review: ''
           }
     }
   },
@@ -75,6 +88,9 @@ export default {
     clickEvent () {
       this.$router.push({ path: `/submit` })
 
+    },
+    clickReview () {
+      this.$router.push({ path: `/review` })
     }
   }
 }
@@ -98,6 +114,18 @@ input{
 }
 #submit{
   margin-top: 1rem;
+  margin-bottom: 5rem;
+  border-radius: 12%;
+  background-color: white;
+  border-color: black;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+#submit-review{
+    margin-top: 1rem;
+  margin-bottom: 5rem;
   border-radius: 12%;
   background-color: white;
   border-color: black;
