@@ -6,6 +6,19 @@ import data from '../../src/server/db.json'
 const localVue = createLocalVue()
 localVue.use(VueRouter)
 
+const routes = [{ path: '/register:eventId', component: Register }]
+
+
+it('route path register should exist', () => {
+  const $route = { path: 'http://localhost:8080/#/register:eventId' }
+  const wrapper = shallowMount(Register, {
+      mocks: {
+          $route
+      }
+  })
+  expect(wrapper.vm.$route.path).toBe($route.path)
+})
+
 describe('Register', () => {
     let wrapper;
     const $route = {params: {eventId: 1}}
@@ -69,6 +82,12 @@ it('should show empty age-form when rendered', () => {
 
 it('should show empty email-form when rendered', () => {
   let content = wrapper.find('#email').text();
+
+  expect(content).toBe('');
+})
+
+it('should show empty review-form when rendered', () => {
+  let content = wrapper.find('#review').text();
 
   expect(content).toBe('');
 })

@@ -13,12 +13,6 @@
             <br><b>Time:</b> {{event.time}}
             <br><b>{{event.info}}</b>
             <br>
-            <font-awesome-icon class="star" :icon="['fas', 'star']"/>
-            <font-awesome-icon class="star" :icon="['fas', 'star']"/>
-            <font-awesome-icon class="star" :icon="['fas', 'star']"/>
-            <font-awesome-icon class="star" :icon="['fas', 'star']"/>
-            <font-awesome-icon class="star" :icon="['fas', 'star']"/>
-            <b>{{ratings}}</b>
             <button id="btn" @click="clickEvent(event.id)">Register</button>
           </li>
       </ul>
@@ -36,8 +30,7 @@ export default {
   },
   data: () => {
     return {
-      events: data.events,
-      ratings: 0
+      events: data.events
     }
   },
   methods: {
@@ -81,7 +74,7 @@ img{
     cursor: pointer;
 }
 #btn{
-  margin-left: 1rem;
+  margin-left: 8rem;
   border-radius: 12%;
   background-color: white;
   border-color: black;

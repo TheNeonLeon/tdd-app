@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomePage from '@/components/HomePage.vue'
 import Register from '@/components/Register.vue'
 import Submit from '@/components/Submit.vue'
+import Review from '@/components/Review.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/submit',
     name: 'Submit',
     component: Submit
+  },
+  {
+    path: '/review',
+    name: 'Review',
+    component: Review
   }
 ]
 
