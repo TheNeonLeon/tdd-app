@@ -14,4 +14,4 @@ RUN npm run build
 
 EXPOSE 8080
 
-CMD [ "npm", "run", "start", "dist/" ]
+CMD [ "http-server", "dist" ]
