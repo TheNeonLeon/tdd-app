@@ -2,6 +2,9 @@
   <div id="wrapper">
     <header>
       <h1>The Meetup Hub</h1>
+      <h3>Welcome to The Meetup Hub. 
+        The Meetup Hub is a place where you can join different kinds of events. 
+        Join us for our events and meetups!</h3>
     </header>
     <main id="wrapper">
       <ul>
@@ -42,8 +45,10 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 header{
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 ul{
     display: flex;
@@ -54,17 +59,18 @@ ul{
 li{
     border-style: solid;
     border-color: hsl(0, 0%, 98%);
+    border-radius: 3%;
     background-color: hsl(0, 0%, 98%);
     box-shadow: 5px 3px 3px rgb(116, 116, 116);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;    
     width: 200px;
     height: 120px;
     padding-bottom: 10rem;
 }
 li:hover{
-   -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+   -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     transition:all 0.5s ease;
 
 }
