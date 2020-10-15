@@ -21,14 +21,15 @@ body, html {
   min-height: 100vh;
 }
 html {
-  background-color: rgb(238, 238, 238);
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(156,178,218,1) 100%);
 }
 
 #app {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: black;
 }
 
 #nav a.router-link-exact-active {

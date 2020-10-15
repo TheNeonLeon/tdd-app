@@ -55,13 +55,13 @@ ul{
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    margin-top: 4rem;
 }
 li{
-    border-style: solid;
-    border-color: hsl(0, 0%, 98%);
     border-radius: 3%;
-    background-color: hsl(0, 0%, 98%);
-    box-shadow: 5px 3px 3px rgb(116, 116, 116);
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgb(210, 244, 245) 0%, rgb(159, 190, 247) 100%);
+    box-shadow: 5px 3px 3px rgb(93, 115, 163);
     font-family: 'Roboto', sans-serif;    
     width: 200px;
     height: 120px;
@@ -75,9 +75,11 @@ li:hover{
 
 }
 img{
-    width: 101%;
+    width: 100%;
     height: 100%;
     cursor: pointer;
+    border-radius: 3%;
+
 }
 #btn{
   margin-left: 8rem;

@@ -1,9 +1,9 @@
 <template>
   <div>
     <main>
+      <form>
       <h1>Register form</h1>
       <h4>Please enter your information below</h4>
-      <form>
     	  <label for="firstName">First Name</label>
 
     	  <input 
@@ -39,7 +39,7 @@
     	    <br>
     	  <button id="submit" @click="clickEvent()" type="submit">Submit</button>
         <br>
-          <label for="review">Participated in one of our events in the past? Leave a review and tell us what you though</label>
+          <label for="review">Participated in one of our events in the past?<br> Leave a review and tell us what you though</label>
           <br>
           <textarea
             id="review"
@@ -99,6 +99,17 @@ export default {
 <style scoped>
 main{
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+form{
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(159, 190, 247) 100%);
+    border-radius: 3%;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 5px 3px 3px rgb(93, 115, 163);
 }
 li{
   list-style: none;
