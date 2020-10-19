@@ -37,32 +37,6 @@ describe('Register', () => {
         })
       })
 
-      /*it('should add event to localStorage', async () => {
-        const nameField = wrapper.find('#firstName')
-        await nameField.trigger('input')
-
-        const expectedName = form.firstName;
-      const expectedLastName = form.lastName;
-        const expectedEmail = form.email;
-        const expectedEvent = form.event;
-        const expectedObject = [{"email": expectedEmail, "event": expectedEvent, "firstName": expectedName, "lastName": expectedLastName}]
-
-        expect(localStorageMock.setItem).toHaveBeenCalledWith('form', JSON.stringify(expectedObject))
-      })*/
-      
-/*describe('updateForm', () => {
-  it('updateForm', () => {
-    const updateForm = jest.fn(input, value)
-    updateForm(input, value)
-    wrapper = shallowMount(Register, {
-      methods: {
-        updateForm
-      }
-    })
-    expect(updateForm()).toHaveBeenCalled()
-    })
-})*/
-
 it('Register-page should exist', () => {
     const reg = wrapper.findComponent(Register);
     expect(reg.exists()).toBe(true);
